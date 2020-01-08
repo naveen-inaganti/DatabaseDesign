@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fine Payment Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="fine.js"></script>
+    <style media="screen">
+      body
+      {
+        background-color: AQUA;
+      }
+      #homelink
+      {
+        color:indigo;
+      }
+      #divhomebutton
+      {
+        margin-top: 25px;
+      }
+      #paymenttext
+      {
+        margin-top: 10px;
+        text-align: center;
+      }
+    form
+      {
+        
+        
+        margin-right: 200px;
+        margin-left: 200px;
+      }
+      #fine_div
+      {
+        text-align:center;
+        margin-top:25px;
+      }
+      #fineDetails,#pay_fine,#update_text
+      {
+        text-align: center;
+      }
+      #updatefine
+      {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    </style>
+  </head>
+  <body>
+     <h3 id="paymenttext" name="paymenttext">User Payment Portal</h3>
+    <div class="text-center text-capitalize font-italic" id="divhomebutton">
+      <button type="button" name="homebutton" id='homebutton' class="btn btn-outline-success"><a href="home.html" id="homelink">Home</a></button>
+   </div>
+ <div class="text-center text-capitalize font-italic" id="updatefine">
+      <button type="button" name="fineupdate" id='fineupdate' class="btn btn-outline-success">Click To Update Fines!</button>
+   </div>
+<div class="alert alert-secondary text-center text-capitalize font-italic" id="update_text" style="display: none; margin-top:15px;">
+
+    </div>
+    <form class="usercheckinform"  method="POST">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="userinput" id="userinput" value="" placeholder="Enter Card No....">
+        <div class="input-group-append">
+          <input type="submit" class="btn btn-outline-success" name="searchuser" id="searchuser" value="Calculate Fine">
+        </div>
+      </div>
+    </form>
+    
+    <div id="fine_div" class="alert alert-secondary text-center text-capitalize font-italic" style="display: none; margin-top:15px;">
+      <!--<input type="submit" class="btn btn-outline-success" name="fine_cal" id="fine_cal" value="Calculate fine">-->
+    </div>
+    <div id="pay_fine" name="pay_fine">
+      <input type="submit" class="btn btn-outline-success" name="fine_cal" id="fine_cal" value="Pay Fine for returned books!">
+      
+    </div>
+  </body>
+</html>

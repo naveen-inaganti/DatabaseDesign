@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library Search</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		body
+		{
+			background-color: AQUA;
+			background: "img1.jpg";
+
+		}
+		#cardiddiv
+		{
+			margin-right: 500px;
+			margin-left:500px;
+		}
+		#searchform
+		{
+		margin-right: 200px;
+        margin-left: 200px;
+        margin-top: 20px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<h3 style="text-align:center;">Library Management System</h3>
+<div id="container" style="text-align: center;padding-top: 10px;">
+<div id="div2"  class="btn-group-vertical">
+			<button id ="registration" class="btn btn-outline-success"><a href="borrow.html" style="color: indigo;">New User SignUp</a> </button>
+			
+			<button id ="checkin" class="btn btn-outline-success"><a href="checkin.html" style="color: indigo;" >Book Check-in</a></button>
+			<button id ="payment" class="btn btn-outline-success"><a href="fine.html" style="color: indigo;" >Fine Payment</a></button>
+</div>
+</div>
+<form id="searchform" action="" method="POST">
+			
+		<div class="input-group mb-3">
+			<input id="booksearch" type="text" name="booksearch" class="form-control" placeholder="Enter Author or Title or Book id" autofocus>
+			<div class="input-group-append">
+			 <input id= "searchsubmit" type="submit" value="searchsubmit" style="color: indigo;"  class="btn btn-outline-success">
+			</div>
+		</div>
+		</form>
+<div id="idcontainer" style="text-align: center;padding-top: 10px;">
+			<div id="cardiddiv">
+				Card ID:<input id= "cardid" class="form-control" type="text" name="cardid"></br>
+			</div>
+			<div id="moveoutdiv">
+            <button id ="moveout" class="btn btn-outline-success" style="color: indigo;margin-top: 15px;">Anything Left or Ready to Move out with Books?</button></br>
+            <button id ="moveoutafterselect" class="btn btn-outline-success" style="color: indigo;margin-top: 15px;">Checkout</button></br>
+        </div>
+			<p id="check"></p>
+</div>
+
+
+		</br>
+		
+		<div style="overflow-y:scroll; height: 500px;">
+		<table id="tableid" align="center" class="table table-hover table-bordered" style="width:80%; margin:10px auto">
+
+			
+			<thead>
+			<tr >
+				<th>ISBN</th><th>Title</th><th>Author</th><th>Availability</th><th>Select</th>
+			</tr>
+			</thead>
+
+			<tbody id="content">
+			</tbody>
+		</table>
+		</div>
+		<script src="home.js"></script>
+</body>
+</html>

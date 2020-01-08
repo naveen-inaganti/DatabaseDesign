@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Check-in</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="checkin.js"></script>
+    <style media="screen">
+      body
+      {
+        background-color: AQUA;
+      }
+      .selectcheckin{
+        background-color: #ffccbb;
+      }
+      #homelink
+      {
+        color:indigo;
+      }
+      #divhomebutton
+      {
+        margin-top: 25px;
+      }
+      #checkintext
+      {
+        margin-top: 10px;
+        text-align: center;
+      }
+    form
+      {
+        
+        
+        margin-right: 200px;
+        margin-left: 200px;
+      }
+      #fine_div
+      {
+        text-align:center;
+        margin-top:25px;
+      }
+      #fineDetails,#nodues_orloan
+      {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-center text-capitalize font-italic" id="divhomebutton">
+      <button type="button" name="homebutton" id='homebutton' class="btn btn-outline-success"><a href="home.html" id="homelink">Home</a></button>
+   </div>
+    <h3 id="checkintext" name="checkintext">User Check-In</h3>
+    <form class="usercheckinform"  method="POST">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="userinput" id="userinput" value="" placeholder="Enter card no or Borrower name or Book id">
+        <div class="input-group-append">
+          <input type="submit" class="btn btn-outline-success" name="searchuser" id="searchuser" value="User Search">
+        </div>
+      </div>
+    </form>
+    <div class="alert alert-secondary text-center text-capitalize font-italic" id="nodues_orloan" style="display: none; margin-top:15px;">
+
+    </div>
+      <div class="container text-center text-capitalize font-italic" id="fineDetails">
+
+      </div>
+      <div class="alert alert-primary text-center text-capitalize font-italic" style="display: none; margin-top:15px;">
+
+      </div>
+    <div id="fine_div">
+      <input type="submit" class="btn btn-outline-success" name="fine_cal" id="fine_cal" value="Calculate fine">
+    </div>
+    <!--<div style="overflow-y:scroll; height: 550px;">
+      <div class="container text-center text-capitalize font-italic" id="fineDetails">
+
+      </div>
+      <div class="alert alert-secondary text-center text-capitalize font-italic" id="nodues_orloan" style="display: none; margin-top:15px;">
+
+      </div>
+      <div class="alert alert-primary text-center text-capitalize font-italic" style="display: none; margin-top:15px;">
+
+      </div>-->
+    <div style="overflow-y:scroll; height: 550px;">
+    <table id="tableid" align="center" class="table table-hover table-bordered" style="width:80%; margin:10px auto">
+      <thead>
+      <tr>
+        <th>LOAN ID</th><th>CARD ID</th><th>ISBN</th><th>Name</th><th>Title</th><th>Select</th>
+      </tr>
+      </thead>
+      <tbody style="cursor: pointer">
+      </tbody>
+    </table>
+  </div>
+    </div>
+  </body>
+</html>

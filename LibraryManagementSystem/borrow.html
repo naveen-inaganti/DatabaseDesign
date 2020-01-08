@@ -1,0 +1,92 @@
+<html>
+	<head>	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="borrow.js"></script>	
+		<title>New User Registration</title>
+		<style type="text/css">
+			body
+				{
+					background-color: AQUA;
+				}
+			   a
+				{
+					color:indigo;
+				}
+			#newuser
+				{
+					margin-top: 50px;
+					text-align: center;
+				}
+			form
+				{
+					margin-left: 25px;
+					margin-right: 25px
+				}
+			#submitresults
+				{
+					text-align: center;
+				}
+
+		</style>
+	</head>	
+
+	<body>
+		<div class="text-center" style="margin-top:10px;">
+			<button id="home" class="btn btn-outline-success"><a href="home.html">Home</a></button>
+		</div>
+		<div id ="userregistration">
+			<h4 id="newuser">New User Registration</h4>
+			
+			<form id= "newuserform"  method="POST">
+				<div class="form-row">
+					<div class="form-group>
+						<label for="ssn">SSN</label>
+						<input id="ssn" type="text" name="ssn" class="form-control" placeholder="xxx-xx-xxxx(ssn format!)">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="fname">First Name</label>
+						<input id="fname" name="fname" class="form-control" placeholder="First Name...">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="lname">Last Name</label>
+						<input id="lname" name="lname" class="form-control" placeholder="Last Name...">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="mail">Email</label>
+						<input type="text" id="mail" name="mail" class="form-control" placeholder="Email...">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="address">Address</label>
+						<input id="address" type="text" name="address" class="form-control" placeholder="Address...">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-4">
+						<label for="city">City</label>
+						<input id="city" type="text" name="city" class="form-control" placeholder="City...">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="state">State</label>	
+						<input id="state" type="text" name="state" class="form-control" placeholder="State...">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="phone">Phone</label>
+						<input id="phone" type="text" name="phone" class="form-control" placeholder="Phone...">
+					</div>
+				</div>
+		
+			<input id="register" type="submit" value="Register" class="btn btn-outline-success"></br>
+			</form>
+
+			<p id="submitresults"></p>
+
+
+		</div>
+	</body>	
+
+</html>
